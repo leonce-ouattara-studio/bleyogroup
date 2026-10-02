@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+.font-condensed {
+  font-family: 'Barlow Condensed', 'Oswald', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-display {
+  font-family: 'Oswald', 'Barlow Condensed', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Masques de découpe géométriques conformes à la maquette de référence */
+.clip-slanted {
+  clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.clip-triangle {
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.clip-star-badge {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.clip-circle {
+  clip-path: circle(50% at 50% 50%);
+}
+
+.clip-jagged-star {
+  clip-path: polygon(50% 0%, 63% 32%, 98% 35%, 72% 58%, 79% 91%, 50% 72%, 21% 91%, 28% 58%, 2% 35%, 37% 32%);
+}
+
+/* Animations cinématiques subtiles */
+@keyframes slowZoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.animate-slow-zoom {
+  animation: slowZoom 20s ease-in-out infinite alternate;
+}

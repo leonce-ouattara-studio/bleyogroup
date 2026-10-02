@@ -1,0 +1,6 @@
+{
+  "name": "Prompt.js Studio",
+  "description": "Exécuteur et banc d'essai interactif pour vos prompts Gemini avec streaming en temps réel et script CLI Node.js.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
